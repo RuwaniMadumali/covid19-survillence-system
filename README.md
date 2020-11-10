@@ -1,4 +1,4 @@
-# Covid-19 Surveillance System [JDBC]
+# Covid-19 Surveillance System
 > Project represents covid-19 surveillance system using JDBC
 
 
