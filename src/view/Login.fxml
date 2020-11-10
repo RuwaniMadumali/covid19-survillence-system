@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="418.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="434.0" fitWidth="983.0" layoutX="-4.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/global_covid19login.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="249.0" layoutY="108.0" prefHeight="274.0" prefWidth="205.0">
+         <children>
+            <Label fx:id="lblUsernameError" prefHeight="26.0" prefWidth="282.0" textFill="darkred" />
+            <Label fx:id="lblUserRoleError" prefHeight="26.0" prefWidth="208.0" textFill="darkred" />
+         </children>
+      </VBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#001244" height="347.0" layoutX="599.0" layoutY="38.0" stroke="#001244" strokeType="INSIDE" width="359.0" />
+      <Label alignment="CENTER" layoutX="690.0" layoutY="46.0" prefHeight="38.0" prefWidth="210.0" text="Login" textFill="#5a70d3">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="658.0" layoutY="107.0" prefHeight="31.0" prefWidth="241.0" promptText="Username" />
+      <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="658.0" layoutY="166.0" prefHeight="36.0" prefWidth="241.0" promptText="Password" />
+      <ComboBox fx:id="cmbUserRole" layoutX="658.0" layoutY="228.0" prefHeight="34.0" prefWidth="241.0" promptText="Select User Role" />
+      <Button fx:id="btnLogin" alignment="CENTER" contentDisplay="CENTER" layoutX="698.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnLogin_OnAction" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: #002489;" text="Login" textFill="WHITE" />
+   </children>
+</AnchorPane>
